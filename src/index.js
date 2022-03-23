@@ -44,7 +44,9 @@ app.use("/seats", seatController);
 
 // **************************************
 
-app.listen("1213", async (req, res) => {
+const port = process.env.PORT || 1213;
+
+app.listen(port, async (req, res) => {
     await connect();
     console.log("Hai i am listening on 1213");
 });
