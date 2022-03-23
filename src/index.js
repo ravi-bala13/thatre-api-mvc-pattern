@@ -24,9 +24,9 @@ const {register, login} = require("./controllers/auth.controller");
 
 // *****************edited for deploy*********************
 
-app.get('/', function (req, res) {
-    return res.redirect('https://faballey-clone.vercel.app/');
-});
+//app.get('/', function (req, res) {
+//    return res.redirect('https://faballey-clone.vercel.app/');
+//});
 
 // **************************************
 app.post("/register", register);
