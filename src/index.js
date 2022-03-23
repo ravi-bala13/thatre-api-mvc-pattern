@@ -20,8 +20,13 @@ const seatController = require("./controllers/seats.controller");
 
 const {register, login} = require("./controllers/auth.controller");
 
-// **************************************
+// *****************edited for deploy*********************
 
+app.get('/', function (req, res) {
+    return res.redirect('https://faballey-clone.vercel.app/');
+});
+
+// **************************************
 app.post("/register", register);
 app.post("/login", login);
 
