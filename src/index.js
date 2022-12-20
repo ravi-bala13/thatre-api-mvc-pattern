@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-require('dotenv').config();
+require("dotenv").config();
 
 const connect = require("./config/db.js");
 
@@ -20,7 +20,7 @@ const showController = require("./controllers/shows.controller");
 
 const seatController = require("./controllers/seats.controller");
 
-const {register, login} = require("./controllers/auth.controller");
+const { register, login } = require("./controllers/auth.controller");
 
 // *****************edited for deploy*********************
 
@@ -49,6 +49,6 @@ app.use("/seats", seatController);
 const port = process.env.PORT || 1213;
 
 app.listen(port, async (req, res) => {
-    await connect();
-    console.log("Hai i am listening on 1213");
+  await connect();
+  console.log("Hai i am listening on 1213");
 });
