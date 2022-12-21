@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const connect = () => {
-    return mongoose.connect("mongodb://localhost:27017/theatre_details");
-}
+  return mongoose.connect(process.env.DB_URL);
+};
 
 module.exports = connect;
