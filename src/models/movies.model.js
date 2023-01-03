@@ -8,6 +8,6 @@ const movieSchema = new mongoose.Schema({
   poster_url: { type: String, required: true },
 });
 
-const Movie = mongoose.model("movie", movieSchema);
+const Movie = mongoose.model("movie", movieSchema); // table name - movies
 
 module.exports = Movie;
