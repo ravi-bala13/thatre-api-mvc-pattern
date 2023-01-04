@@ -9,6 +9,6 @@ const screenSchema = new mongoose.Schema({
   },
 });
 
-const Screen = mongoose.model("screen", screenSchema);
+const Screen = mongoose.model("screen", screenSchema); // table name - screens
 
 module.exports = Screen;
