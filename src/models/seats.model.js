@@ -8,6 +8,6 @@ const seatSchema = new mongoose.Schema({
   },
 });
 
-const Seat = mongoose.model("seat", seatSchema);
+const Seat = mongoose.model("seat", seatSchema); // table name - seats
 
 module.exports = Seat;
