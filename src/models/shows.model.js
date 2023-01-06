@@ -15,6 +15,6 @@ const showSchema = new mongoose.Schema({
   },
 });
 
-const Show = mongoose.model("show", showSchema);
+const Show = mongoose.model("show", showSchema); // table name - shows
 
 module.exports = Show;
