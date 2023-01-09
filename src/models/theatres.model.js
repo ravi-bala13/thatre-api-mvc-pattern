@@ -5,6 +5,6 @@ const theatreSchema = new mongoose.Schema({
   location: { type: String, required: true },
 });
 
-const Theatre = mongoose.model("theatre", theatreSchema);
+const Theatre = mongoose.model("theatre", theatreSchema); // table name - theatres
 
 module.exports = Theatre;
