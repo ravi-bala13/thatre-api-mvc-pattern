@@ -31,6 +31,6 @@ userSchema.methods.checkPassword = function (password) {
   });
 };
 
-const User = mongoose.model("user", userSchema);
+const User = mongoose.model("user", userSchema); // table name - users
 
 module.exports = User;
