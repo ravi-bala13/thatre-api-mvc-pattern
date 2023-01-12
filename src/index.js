@@ -33,15 +33,10 @@ app.post("/register", register);
 app.post("/login", login);
 
 app.use("/users", userController);
-
 app.use("/movies", movieController);
-
 app.use("/theatres", theatreController);
-
 app.use("/screens", screenController);
-
 app.use("/shows", showController);
-
 app.use("/seats", seatController);
 
 // **************************************
