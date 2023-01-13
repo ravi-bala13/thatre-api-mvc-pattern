@@ -1,7 +1,6 @@
 const User = require("../models/users.model");
 
 const jwt = require("jsonwebtoken");
-
 require("dotenv").config();
 
 const newToken = (user) => {
@@ -33,12 +32,10 @@ const login = async (req, res) => {
     let user = await User.findOne({ email: req.body.email });
 
     if (!user) {
-      return res
-        .status(400)
-        .json({
-          message: "can't find account with this email",
-          status: "Failed",
-        });
+      return res.status(400).json({
+        message: "can't find account with this email",
+        status: "Failed",
+      });
     }
 
     const matchPassword = await user.checkPassword(req.body.password);
