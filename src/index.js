@@ -9,13 +9,9 @@ const connect = require("./config/db.js");
 app.use(express.json());
 
 const userController = require("./controllers/users.controller");
-
 const movieController = require("./controllers/movies.controller");
-
 const theatreController = require("./controllers/theatres.controller");
-
 const screenController = require("./controllers/screens.controller");
-
 const showController = require("./controllers/shows.controller");
 
 const seatController = require("./controllers/seats.controller");
