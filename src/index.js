@@ -13,7 +13,6 @@ const movieController = require("./controllers/movies.controller");
 const theatreController = require("./controllers/theatres.controller");
 const screenController = require("./controllers/screens.controller");
 const showController = require("./controllers/shows.controller");
-
 const seatController = require("./controllers/seats.controller");
 
 const { register, login } = require("./controllers/auth.controller");
