@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const connect = require("./config/db.js");
-
 app.use(express.json());
 
 const userController = require("./controllers/users.controller");
