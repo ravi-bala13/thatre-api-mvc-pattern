@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-
 const Theatre = require("../models/theatres.model");
 
 router.post("/", async (req, res) => {
